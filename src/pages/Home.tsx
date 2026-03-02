@@ -1,5 +1,5 @@
-import { useNavigate } from 'react-router-dom'
 import { motion } from 'framer-motion'
+import { toast } from 'sonner'
 import { ScanFace, Wallet, ShieldCheck, Lock, Eye, Fingerprint } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 
@@ -13,8 +13,6 @@ const fadeUp = {
 }
 
 export function Home() {
-  const navigate = useNavigate()
-
   return (
     <div className="relative">
       {/* Hero Section */}
@@ -40,7 +38,7 @@ export function Home() {
                 <Fingerprint className="h-12 w-12 text-primary" />
               </div>
               {/* Glow dot */}
-              <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1 w-2 h-2 rounded-full bg-primary shadow-[0_0_10px_oklch(0.62_0.24_295)] animate-float" />
+              <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1 w-2 h-2 rounded-full bg-primary shadow-[0_0_10px_oklch(0.62_0.16_55)] animate-float" />
             </div>
           </motion.div>
 
@@ -72,7 +70,7 @@ export function Home() {
           >
             <Button
               size="lg"
-              onClick={() => navigate('/verify')}
+              onClick={() => toast('Coming Soon', { description: 'ONE id verification is launching soon. Stay tuned!' })}
               className="glow-accent-strong text-base px-8 py-6"
             >
               <ScanFace className="h-5 w-5" />

@@ -1,11 +1,13 @@
 export function Footer() {
+  const currentYear = new Date().getFullYear()
+
   const SocialLinks = () => (
     <div className="flex items-center gap-3">
       <a
         href="https://discord.com/invite/RetTCVq7tJ"
         target="_blank"
         rel="noopener noreferrer"
-        className="hover:text-primary transition-all duration-300 hover:scale-110 hover:shadow-[0_2px_8px_oklch(0.62_0.24_295/0.6)] hover:translate-y-[-1px] rounded-full p-1"
+        className="hover:text-primary transition-all duration-300 hover:scale-110 hover:shadow-[0_2px_8px_oklch(0.62_0.16_55/0.6)] hover:translate-y-[-1px] rounded-full p-1"
         aria-label="Discord"
       >
         <svg width="18" height="18" viewBox="0 0 71 55" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -16,7 +18,7 @@ export function Footer() {
         href="https://x.com/explorills_main"
         target="_blank"
         rel="noopener noreferrer"
-        className="hover:text-primary transition-all duration-300 hover:scale-110 hover:shadow-[0_2px_8px_oklch(0.62_0.24_295/0.6)] hover:translate-y-[-1px] rounded-full p-1"
+        className="hover:text-primary transition-all duration-300 hover:scale-110 hover:shadow-[0_2px_8px_oklch(0.62_0.16_55/0.6)] hover:translate-y-[-1px] rounded-full p-1"
         aria-label="Twitter/X"
       >
         <svg width="16" height="16" viewBox="0 0 1200 1227" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -27,7 +29,7 @@ export function Footer() {
         href="https://github.com/explorills/"
         target="_blank"
         rel="noopener noreferrer"
-        className="hover:text-primary transition-all duration-300 hover:scale-110 hover:shadow-[0_2px_8px_oklch(0.62_0.24_295/0.6)] hover:translate-y-[-1px] rounded-full p-1"
+        className="hover:text-primary transition-all duration-300 hover:scale-110 hover:shadow-[0_2px_8px_oklch(0.62_0.16_55/0.6)] hover:translate-y-[-1px] rounded-full p-1"
         aria-label="GitHub"
       >
         <svg width="18" height="18" viewBox="0 0 98 96" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -47,11 +49,11 @@ export function Footer() {
               href="https://expl.one"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-primary hover:text-primary/80 transition-all duration-300 hover:scale-110 hover:shadow-[0_2px_8px_oklch(0.62_0.24_295/0.6)] hover:translate-y-[-1px] cursor-pointer underline rounded-full px-1"
+              className="text-primary hover:text-primary/80 transition-all duration-300 hover:scale-110 hover:shadow-[0_2px_8px_oklch(0.62_0.16_55/0.6)] hover:translate-y-[-1px] cursor-pointer underline rounded-full px-1"
             >
               EXPL.ONE
             </a>
-            {" \u00A9 2025 All Rights Reserved"}
+            {` \u00A9 ${currentYear} All Rights Reserved`}
           </span>
 
           <div className="absolute left-1/2 -translate-x-1/2">
@@ -62,7 +64,7 @@ export function Footer() {
             href="https://node.expl.one"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center px-3 py-1.5 text-[11px] sm:text-xs text-white font-normal bg-card border border-primary rounded-md shadow-[0_2px_4px_rgba(0,0,0,0.3),inset_0_1px_0_rgba(255,255,255,0.1)] hover:shadow-[0_4px_8px_rgba(0,0,0,0.4),0_0_12px_oklch(0.62_0.24_295/0.6),inset_0_1px_0_rgba(255,255,255,0.15)] hover:translate-y-[-1px] hover:bg-card/80 hover:scale-110 transition-all duration-300 cursor-pointer whitespace-nowrap shrink-0"
+            className="inline-flex items-center px-3 py-1.5 text-[11px] sm:text-xs text-white font-normal bg-card border border-primary rounded-md shadow-[0_2px_4px_rgba(0,0,0,0.3),inset_0_1px_0_rgba(255,255,255,0.1)] hover:shadow-[0_4px_8px_rgba(0,0,0,0.4),0_0_12px_oklch(0.62_0.16_55/0.6),inset_0_1px_0_rgba(255,255,255,0.15)] hover:translate-y-[-1px] hover:bg-card/80 hover:scale-110 transition-all duration-300 cursor-pointer whitespace-nowrap shrink-0"
             style={{ fontFamily: "'Roboto Mono', ui-monospace, monospace" }}
           >
             // Powered by EXPL Nodes
@@ -76,11 +78,11 @@ export function Footer() {
               href="https://expl.one"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-primary hover:text-primary/80 transition-all duration-300 hover:scale-110 hover:shadow-[0_2px_8px_oklch(0.62_0.24_295/0.6)] hover:translate-y-[-1px] cursor-pointer underline rounded-full px-1"
+              className="text-primary hover:text-primary/80 transition-all duration-300 hover:scale-110 hover:shadow-[0_2px_8px_oklch(0.62_0.16_55/0.6)] hover:translate-y-[-1px] cursor-pointer underline rounded-full px-1"
             >
               EXPL.ONE
             </a>
-            {" \u00A9 2025 All Rights Reserved"}
+            {` \u00A9 ${currentYear} All Rights Reserved`}
           </span>
 
           <SocialLinks />

@@ -12,7 +12,7 @@ const STYLES = {
   textColor: '#ffffff',
   backgroundColor: 'oklch(0.18 0.04 252)',
   backgroundColorHover: 'oklch(0.18 0.04 252 / 0.8)',
-  borderColor: 'oklch(0.62 0.24 295)',
+  borderColor: 'oklch(0.62 0.16 55)',
   sizes: {
     sm: { fontSize: '10px', paddingX: '8px', paddingY: '4px', borderRadius: '4px' },
     md: { fontSize: '12px', paddingX: '12px', paddingY: '6px', borderRadius: '6px' },
@@ -20,7 +20,7 @@ const STYLES = {
   },
   shadow: {
     default: '0 2px 4px rgba(0,0,0,0.3), inset 0 1px 0 rgba(255,255,255,0.1)',
-    hover: '0 4px 8px rgba(0,0,0,0.4), 0 0 12px oklch(0.62 0.24 295 / 0.6), inset 0 1px 0 rgba(255,255,255,0.15)',
+    hover: '0 4px 8px rgba(0,0,0,0.4), 0 0 12px oklch(0.62 0.16 55 / 0.6), inset 0 1px 0 rgba(255,255,255,0.15)',
   },
 } as const
 

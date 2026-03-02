@@ -157,7 +157,7 @@ export function FaceScanner({ onDescriptorCaptured, onClose }: FaceScannerProps)
                     <div
                       className="absolute inset-0 rounded-full border-4 border-transparent animate-scan-rotate"
                       style={{
-                        borderImage: 'conic-gradient(oklch(0.62 0.24 295), transparent 60%) 1',
+                        borderImage: 'conic-gradient(oklch(0.62 0.16 55), transparent 60%) 1',
                         borderRadius: '50%',
                       }}
                     />
@@ -171,7 +171,7 @@ export function FaceScanner({ onDescriptorCaptured, onClose }: FaceScannerProps)
                           key={i}
                           className={`w-2 h-2 rounded-full transition-all duration-300 ${
                             consecutiveDetections > i
-                              ? 'bg-primary scale-125 shadow-[0_0_8px_oklch(0.62_0.24_295/0.8)]'
+                              ? 'bg-primary scale-125 shadow-[0_0_8px_oklch(0.62_0.16_55/0.8)]'
                               : 'bg-muted-foreground/30'
                           }`}
                         />

@@ -24,31 +24,31 @@
 }
 
 :root {
-  --background: oklch(0.12 0.02 295);
-  --foreground: oklch(0.95 0.01 295);
-  --card: oklch(0.16 0.03 295);
-  --card-foreground: oklch(0.95 0.01 295);
-  --popover: oklch(0.16 0.03 295);
-  --popover-foreground: oklch(0.95 0.01 295);
-  --primary: oklch(0.62 0.24 295);
-  --primary-foreground: oklch(0.98 0.01 295);
-  --secondary: oklch(0.22 0.03 295);
-  --secondary-foreground: oklch(0.95 0.01 295);
-  --muted: oklch(0.20 0.03 295);
-  --muted-foreground: oklch(0.60 0.02 295);
-  --accent: oklch(0.62 0.24 295);
-  --accent-foreground: oklch(0.98 0.01 295);
+  --background: oklch(0.12 0.02 55);
+  --foreground: oklch(0.95 0.01 55);
+  --card: oklch(0.16 0.03 55);
+  --card-foreground: oklch(0.95 0.01 55);
+  --popover: oklch(0.16 0.03 55);
+  --popover-foreground: oklch(0.95 0.01 55);
+  --primary: oklch(0.62 0.16 55);
+  --primary-foreground: oklch(0.98 0.01 55);
+  --secondary: oklch(0.22 0.03 55);
+  --secondary-foreground: oklch(0.95 0.01 55);
+  --muted: oklch(0.20 0.03 55);
+  --muted-foreground: oklch(0.60 0.02 55);
+  --accent: oklch(0.62 0.16 55);
+  --accent-foreground: oklch(0.98 0.01 55);
   --destructive: oklch(0.60 0.22 25);
-  --destructive-foreground: oklch(0.98 0.01 295);
-  --border: oklch(0.26 0.03 295);
-  --input: oklch(0.26 0.03 295);
-  --ring: oklch(0.62 0.24 295);
-  --navbar-bg: oklch(0.10 0.02 295);
+  --destructive-foreground: oklch(0.98 0.01 55);
+  --border: oklch(0.26 0.03 55);
+  --input: oklch(0.26 0.03 55);
+  --ring: oklch(0.62 0.16 55);
+  --navbar-bg: oklch(0.10 0.02 55);
   --header-bg: oklch(0.10 0 0);
   --radius: 0.5rem;
   --font-sans: Space Grotesk;
   --font-mono: Roboto Mono;
-  --shadow-color: oklch(0.62 0.24 295);
+  --shadow-color: oklch(0.62 0.16 55);
   --spacing: 0.20rem;
 }
 
@@ -83,10 +83,10 @@
 
 /* Glow effects for brand */
 .glow-accent {
-  box-shadow: 0 0 20px oklch(0.62 0.24 295 / 0.15);
+  box-shadow: 0 0 20px oklch(0.62 0.16 55 / 0.15);
 }
 .glow-accent-strong {
-  box-shadow: 0 0 30px oklch(0.62 0.24 295 / 0.3);
+  box-shadow: 0 0 30px oklch(0.62 0.16 55 / 0.3);
 }
 
 /* Animations */
@@ -101,7 +101,7 @@
   100% { background-position: 200% 0; }
 }
 .animate-shimmer {
-  background: linear-gradient(90deg, transparent, oklch(0.62 0.24 295 / 0.1), transparent);
+  background: linear-gradient(90deg, transparent, oklch(0.62 0.16 55 / 0.1), transparent);
   background-size: 200% 100%;
   animation: shimmer 2s infinite;
 }
@@ -129,6 +129,6 @@
 
 /* Focus visible */
 :focus-visible {
-  outline: 2px solid oklch(0.62 0.24 295);
+  outline: 2px solid oklch(0.62 0.16 55);
   outline-offset: 2px;
 }
