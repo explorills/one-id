@@ -1,0 +1,9 @@
+[install]
+linker = "isolated"
+peer = true
+optional = true
+dev = true
+
+[test]
+preload = []
+coverage = true
