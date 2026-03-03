@@ -28,11 +28,16 @@ export function Home() {
             className="mb-8 flex justify-center"
           >
             <div className="relative w-32 h-32">
-              <div className="absolute inset-0 rounded-full border-2 border-primary/20" />
-              <div className="absolute inset-3 rounded-full border-2 border-primary/40" />
+              {/* Outer ring */}
+              <div className="absolute inset-0 rounded-full border-2 border-primary/20 animate-pulse-ring" />
+              {/* Middle ring */}
+              <div className="absolute inset-3 rounded-full border-2 border-primary/40 animate-scan-rotate" />
+              {/* Inner ring with icon */}
               <div className="absolute inset-6 rounded-full border-2 border-primary bg-primary/10 flex items-center justify-center glow-accent">
                 <Fingerprint className="h-12 w-12 text-primary" />
               </div>
+              {/* Glow dot */}
+              <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1 w-2 h-2 rounded-full bg-primary shadow-[0_0_10px_oklch(0.62_0.16_55)] animate-float" />
             </div>
           </motion.div>
 

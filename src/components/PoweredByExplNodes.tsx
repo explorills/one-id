@@ -14,7 +14,7 @@ const STYLES = {
   backgroundColorHover: 'oklch(0.18 0.04 252 / 0.8)',
   borderColor: 'oklch(0.62 0.16 55)',
   sizes: {
-    sm: { fontSize: '10px', paddingX: '8px', paddingY: '4px', borderRadius: '4px' },
+    sm: { fontSize: '14px', paddingX: '8px', paddingY: '4px', borderRadius: '4px' },
     md: { fontSize: '12px', paddingX: '12px', paddingY: '6px', borderRadius: '6px' },
     lg: { fontSize: '14px', paddingX: '16px', paddingY: '8px', borderRadius: '8px' },
   },
