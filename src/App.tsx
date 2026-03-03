@@ -24,7 +24,7 @@ export default function App() {
           <BrowserRouter>
             <div className="min-h-screen bg-background text-foreground flex flex-col">
               <Header />
-              <main className="flex-1 pt-16 pb-14">
+              <main className="flex-1 pt-24 pb-14">
                 <Routes>
                   <Route path="/" element={<Home />} />
                 </Routes>
