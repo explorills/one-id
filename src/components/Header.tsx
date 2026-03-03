@@ -6,16 +6,22 @@ export function Header() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 w-full border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container mx-auto px-4 sm:px-6 py-3 sm:py-4 flex items-center justify-between">
-        {/* Logo + Title + Badge (stacked like main-landing) */}
-        <div className="flex items-center gap-2.5">
-          <Link to="/" className="flex items-center gap-2.5">
-            <img src={logo} alt="ONE id" className="w-14 h-14 sm:w-16 sm:h-16 object-contain" />
+        <div className="flex items-center gap-[11px]">
+          <Link to="/">
+            <img
+              src={logo}
+              alt="ONE id"
+              className="w-[58px] h-[58px] sm:w-[66px] sm:h-[66px] object-contain"
+              width="66"
+              height="66"
+              loading="eager"
+            />
           </Link>
-          <div className="flex flex-col gap-1">
+          <div className="flex flex-col gap-1.5">
             <Link to="/" className="text-[24px] sm:text-[26px] font-bold tracking-tight leading-none">
               ONE <span className="text-primary">id</span>
             </Link>
-            <PoweredByExplNodes size="sm" className="powered-tag-override" />
+            <PoweredByExplNodes size="sm" />
           </div>
         </div>
       </div>
