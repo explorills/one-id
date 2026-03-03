@@ -17,7 +17,7 @@ export function Header() {
               loading="eager"
             />
           </Link>
-          <div className="flex flex-col gap-1.5">
+          <div className="flex flex-col gap-2">
             <Link to="/" className="text-[24px] sm:text-[26px] font-bold tracking-tight leading-none">
               ONE <span className="text-primary">id</span>
             </Link>
