@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion'
-import { toast } from 'sonner'
 import { ScanFace, Wallet, ShieldCheck, Lock, Eye, Fingerprint } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 
@@ -70,12 +69,13 @@ export function Home() {
           >
             <Button
               size="lg"
-              onClick={() => toast('Coming Soon', { description: 'ONE id verification is launching soon. Stay tuned!' })}
-              className="glow-accent-strong text-base px-8 py-6"
+              disabled
+              className="text-base px-8 py-6 opacity-50 cursor-not-allowed"
             >
               <ScanFace className="h-5 w-5" />
               Get Verified
             </Button>
+            <p className="mt-4 text-sm text-muted-foreground">Coming soon...</p>
           </motion.div>
         </div>
       </section>

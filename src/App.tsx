@@ -7,8 +7,6 @@ import { config } from '@/lib/wagmi'
 import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
 import { Home } from '@/pages/Home'
-import { Verify } from '@/pages/Verify'
-import { Dashboard } from '@/pages/Dashboard'
 import { Toaster } from 'sonner'
 
 const queryClient = new QueryClient()
@@ -29,8 +27,6 @@ export default function App() {
               <main className="flex-1 pt-16 pb-14">
                 <Routes>
                   <Route path="/" element={<Home />} />
-                  <Route path="/verify" element={<Verify />} />
-                  <Route path="/dashboard" element={<Dashboard />} />
                 </Routes>
               </main>
               <Footer />
