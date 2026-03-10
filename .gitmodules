@@ -1,9 +1,0 @@
-[submodule "z-1-user-commands"]
-	path = z-1-user-commands
-	url = https://github.com/explorills/z-1-user-commands.git
-[submodule "z-2-user-components"]
-	path = z-2-user-components
-	url = https://github.com/explorills/z-2-user-components.git
-[submodule "z-0-one-backend"]
-	path = z-0-one-backend
-	url = https://github.com/explorills/z-0-one-backend.git
