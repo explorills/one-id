@@ -3,6 +3,10 @@ linker = "isolated"
 peer = true
 optional = true
 dev = true
+minimumReleaseAge = 0
+
+[install.scopes]
+"@explorills" = { registry = "https://npm.pkg.github.com" }
 
 [test]
 preload = []

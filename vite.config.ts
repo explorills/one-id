@@ -14,6 +14,7 @@ export default defineConfig({
   resolve: {
     alias: {
       '@': resolve(projectRoot, 'src')
-    }
+    },
+    dedupe: ['react', 'react-dom', 'wagmi', 'viem', '@tanstack/react-query'],
   },
 });
