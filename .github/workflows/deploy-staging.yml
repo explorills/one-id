@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+  workflow_dispatch:
 
 jobs:
   deploy:
@@ -41,3 +42,7 @@ jobs:
     - name: Deploy to S3 Staging
       run: |
         aws s3 sync ./dist/ s3://staging-id-expl-one/ --delete
+
+    - name: Invalidate CloudFront cache
+      run: |
+        aws cloudfront create-invalidation --distribution-id E1J80X7QFY1BUZ --paths "/*"
