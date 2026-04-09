@@ -4,16 +4,6 @@
 @layer base {
   * {
     @apply border-border;
-    cursor: default;
-  }
-  button, a, [role="button"] {
-    cursor: pointer !important;
-  }
-  button *, a *, [role="button"] * {
-    cursor: pointer !important;
-  }
-  input, textarea {
-    cursor: default !important;
   }
   body {
     font-family: 'Space Grotesk', ui-sans-serif, system-ui, -apple-system, sans-serif;
