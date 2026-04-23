@@ -8,24 +8,3 @@ export function cn(...inputs: ClassValue[]) {
 export function truncateAddress(address: string, chars = 4): string {
   return `${address.slice(0, chars + 2)}...${address.slice(-chars)}`
 }
-
-export function getOneIdApiUrl(): string {
-  const host = window.location.hostname
-  if (host.includes("localhost") || host.includes("127.0.0.1")) return "http://localhost:3010"
-  if (host.startsWith("staging2-all-access")) return "https://api-dev-id.expl.one"
-  return "https://api-id.expl.one"
-}
-
-export function getLootUrl(): string {
-  const host = window.location.hostname
-  if (host.includes("localhost") || host.includes("127.0.0.1")) return "http://localhost:3060"
-  if (host.startsWith("staging2-all-access")) return "https://api-dev-loot.expl.one"
-  return "https://api-loot.expl.one"
-}
-
-export function getNotificationUrl(): string {
-  const host = window.location.hostname
-  if (host.includes("localhost") || host.includes("127.0.0.1")) return "http://localhost:3080"
-  if (host.startsWith("staging2-all-access")) return "https://api-dev-notification.expl.one"
-  return "https://api-notification.expl.one"
-}
